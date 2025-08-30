@@ -186,6 +186,9 @@ img.modal-button {
     width: 45px !important;
     height: 44px !important;
 }
+.mobile-display-none{
+  display:none
+}
 }
 
 @media (max-width:575px) {
