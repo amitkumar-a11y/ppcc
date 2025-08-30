@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PPC Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style-p.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+
+<body>
+
+
+    <header class="page-header" id="mainHeader">
+        <div class="container">
+            <div class="header-inner">
+
+                <div class="header-left">
+                    <div class="logo">
+                        <a href="/">
+                            <img src="images/logo.png" alt="ppc" width="166" height="66" class="img-fluid">
+                            <!-- Logo -->
+                        </a>
+                    </div>
+                    <!-- <div class="language-currency">
+                    <div id="google_translate_element" style="display: none;"></div>
+                    <button class="dropdown-btn">Loading...</button>
+                </div> -->
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="button_container " id="toggle">
+                    <span class="top"></span>
+                    <span class="middle"></span>
+                    <span class="bottom"></span>
+                </div>
+
+                <!-- Navigation Menu -->
+                <nav class="menu overlay">
+                    <ul>
+                        <li><a class="scroll-link" href="#overview">Overview</a></li>
+                        <li><a class="scroll-link" href="#highlights">Highlights</a></li>
+                        <!-- <li>
+                        <span class="menu-nav">Gallery</span>
+                        <ul class="dropdown">
+                            <li><a href="#">Apartments</a></li>
+                            <li><a href="#">Town House</a></li>
+                            <li><a href="#">Villas</a></li>
+                        </ul>
+                    </li> -->
+                        <li><a class="scroll-link" href="#gallery">Gallery</a></li>
+                        <li><a class="scroll-link" href="#price-list">Price List</a></li>
+                        <li><a class="scroll-link" href="#amenities">Amenities</a></li>
+                        <li><a class="scroll-link" href="#location">Location</a></li>
+                        <li><a class="scroll-link" href="#floor-plan">Floor Plans</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <section class="page_banner">
+        <div class="banner-div">
+            <img src="images/banner.jpg" class="desktop-banner img-fluid" width="1920" height="auto" alt="">
+            <!-- <img src="../images/godrej-53/tab-banner1.jpg" class="tab-banner img-fluid" width="1920" height="960" alt="">
+        <img src="../images/godrej-53/mobile-banner1.jpg" class="mobile-banner img-fluid" width="1920" height="960" alt=""> -->
+        </div>
+        <div class="banner_content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-0 col-sm-12 order-lg-1 order-2">
+
+                        <div class="bnr_left_content">
+                            <div class="bnr_form">
+                                <div class="title text-center">
+                                    <h1 id="staticform" class="form_title">Enquire Now</h1>
+                                </div>
+                                <div class="enquire-div">
+                                    <!-- <div class="close_btn">
+                                    <span class="close" onclick="closeFn()">x</span>
+                                </div> -->
+                                    <form method="post" onsubmit="formTitleSubmits(event)">
+                                        <div class="input-group">
+                                            <input type="text" name="name" id="inputName" class="form-control"
+                                                placeholder="Name" required="" pattern="[a-zA-Z\s\-]+"
+                                                title="Only letters, spaces, and hyphens are allowed.">
+                                        </div>
+                                        <div class="input-group">
+                                            <input type="email" name="email" id="inputEmail" class="form-control"
+                                                placeholder="Email" required="">
+                                        </div>
+
+                                        <div class="input-group">
+                                            <!-- <span class="invalid_phone">Please enter valid Phone Number.</span> -->
+                                            <input class="form-control phone" name="phone" type="tel" value="" required>
+                                        </div>
+                                        <input type="hidden" name="countryCode" id="country" class="country" value=""
+                                            required>
+                                        <input type="hidden" name="mobile" id="phonenumber" class="mobile" value=""
+                                            required>
+
+                                        <div class="input-error"> </div>
+                                        <div class="input-group">
+                                            <textarea type="text" name="message" id="inputMessage"
+                                                class="form-control cus_msg" placeholder="Message" row="50"
+                                                required=""></textarea>
+                                        </div>
+                                        <input type="hidden" name="urlName" id="projectNameFromUrl" value="" />
+                                        <!-- <input type="hidden" name="source" id="projectTitleName" class="source" value="" /> -->
+                                        <input type="hidden" name="titleValue" id="formTitle" value="" />
+                                        <input type="hidden" name="source" class="source" value="Seo" />
+                                        <input type="text" name="formflag" class="formflag" value="" />
+                                        <button name="submit" class="btn submit-btn" type="submit">Submit</button>
+                                        <div role="status" id="loader">
+                                            <p class="btn submit-btn">Submitting...</p>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-md-12 col-sm-12 order-lg-2 order-1">
+                        <div class="bnr_right_content">
+                            <div class="contact-number">
+                                Call Now
+                                <a href="tel:+919876543287"><span>: 9876543287</span></a>
+                            </div>
+                            <h1>1 & 2 BR Apartments<br>Investment Park, Dubai</h1>
+                            <div class="starting-price">AED 993K* | INR 2.36 Cr* | USD 270.36K*</div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="project-info-section same-gap" id="overview">
+        <div class="container">
+            <div class="section-title text-center">
+                <h2>Overview</h2>
+            </div>
+            <div class="project-info-div">
+                <div class="row">
+                    <div class="col-6 col-md-6 col-lg-4 col-xl-3">
+                        <div class="project-info-item">
+                            <div class="project-info-inner-div">
+                                <img src="images/over-bg.png" class="img-fluid" alt="">
+
+                                <div class="project-info-inner-div-text">
+                                    <div class="icon">
+                                        <img src="images/icon-bg.png" alt="" class="iconbg">
+                                        <img src="images/lo-icon.png" alt="" class="icn">
+                                    </div>
+                                    <div class="text">
+                                        <p>North Bangalore</p>
+                                        <h4>Location</h4>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-6 col-lg-4 col-xl-3">
+                        <div class="project-info-item">
+                            <div class="project-info-inner-div">
+                                <img src="images/over-bg.png" class="img-fluid" alt="">
+
+                                <div class="project-info-inner-div-text">
+                                    <div class="icon">
+                                        <img src="images/icon-bg.png" alt="" class="iconbg">
+                                        <img src="images/lo-icon.png" alt="" class="icn">
+                                    </div>
+                                    <div class="text">
+                                        <p>North Bangalore</p>
+                                        <h4>Location</h4>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-6 col-lg-4 col-xl-3">
+                        <div class="project-info-item">
+                            <div class="project-info-inner-div">
+                                <img src="images/over-bg.png" class="img-fluid" alt="">
+
+                                <div class="project-info-inner-div-text">
+                                    <div class="icon">
+                                        <img src="images/icon-bg.png" alt="" class="iconbg">
+                                        <img src="images/lo-icon.png" alt="" class="icn">
+                                    </div>
+                                    <div class="text">
+                                        <p>North Bangalore</p>
+                                        <h4>Location</h4>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-6 col-lg-4 col-xl-3">
+                        <div class="project-info-item">
+                            <div class="project-info-inner-div">
+                                <img src="images/over-bg.png" class="img-fluid" alt="">
+
+                                <div class="project-info-inner-div-text">
+                                    <div class="icon">
+                                        <img src="images/icon-bg.png" alt="" class="iconbg">
+                                        <img src="images/lo-icon.png" alt="" class="icn">
+                                    </div>
+                                    <div class="text">
+                                        <p>North Bangalore</p>
+                                        <h4>Location</h4>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-6 col-lg-4 col-xl-3">
+                        <div class="project-info-item">
+                            <div class="project-info-inner-div">
+                                <img src="images/over-bg.png" class="img-fluid" alt="">
+
+                                <div class="project-info-inner-div-text">
+                                    <div class="icon">
+                                        <img src="images/icon-bg.png" alt="" class="iconbg">
+                                        <img src="images/lo-icon.png" alt="" class="icn">
+                                    </div>
+                                    <div class="text">
+                                        <p>North Bangalore</p>
+                                        <h4>Location</h4>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-6 col-lg-4 col-xl-3">
+                        <div class="project-info-item">
+                            <div class="project-info-inner-div">
+                                <img src="images/over-bg.png" class="img-fluid" alt="">
+
+                                <div class="project-info-inner-div-text">
+                                    <div class="icon">
+                                        <img src="images/icon-bg.png" alt="" class="iconbg">
+                                        <img src="images/lo-icon.png" alt="" class="icn">
+                                    </div>
+                                    <div class="text">
+                                        <p>North Bangalore</p>
+                                        <h4>Location</h4>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-6 col-lg-4 col-xl-3">
+                        <div class="project-info-item">
+                            <div class="project-info-inner-div">
+                                <img src="images/over-bg.png" class="img-fluid" alt="">
+
+                                <div class="project-info-inner-div-text">
+                                    <div class="icon">
+                                        <img src="images/icon-bg.png" alt="" class="iconbg">
+                                        <img src="images/lo-icon.png" alt="" class="icn">
+                                    </div>
+                                    <div class="text">
+                                        <p>North Bangalore</p>
+                                        <h4>Location</h4>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-6 col-lg-4 col-xl-3">
+                        <div class="project-info-item">
+                            <div class="project-info-inner-div">
+                                <img src="images/over-bg.png" class="img-fluid" alt="">
+
+                                <div class="project-info-inner-div-text">
+                                    <div class="icon">
+                                        <img src="images/icon-bg.png" alt="" class="iconbg">
+                                        <img src="images/lo-icon.png" alt="" class="icn">
+                                    </div>
+                                    <div class="text">
+                                        <p>North Bangalore</p>
+                                        <h4>Location</h4>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="highlights-section section-title-white" id="highlights">
+        <div class="highlights-div">
+            <img src="images/highlights-bg.png" class="desktop-banner img-fluid" width="1920" height="auto" alt="">
+            <!-- <img src="../images/godrej-53/tab-banner1.jpg" class="tab-banner img-fluid" width="1920" height="960" alt="">
+        <img src="../images/godrej-53/mobile-banner1.jpg" class="mobile-banner img-fluid" width="1920" height="960" alt=""> -->
+        </div>
+
+
+        <div class="container">
+            <div class="height_inner">
+                <div class="section-title text-center">
+                    <h2>Highlights</h2>
+                </div>
+                <div class="content-outer">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6">
+                            <p class="hight-point">Vastu-compliant layouts ensuring natural light & ventilation.</p>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <p class="hight-point">Vastu-compliant layouts ensuring natural light & ventilation.</p>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <p class="hight-point">Vastu-compliant layouts ensuring natural light & ventilation.</p>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <p class="hight-point">Vastu-compliant layouts ensuring natural light & ventilation.</p>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <p class="hight-point">Vastu-compliant layouts ensuring natural light & ventilation.</p>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <p class="hight-point">Vastu-compliant layouts ensuring natural light & ventilation.</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+    </section>
+  <section class="galley-section same-gap" id="gallery">
+
+    <div class="section-title text-center">
+        <h2 class="section-bot">Galley</h2>
+    </div>
+    <div class="container">
+        <!-- <div class="image_box">
+            <ul class="d-flex flex-wrap w-100 m-auto justify-content-center gap-1 overflow-hidden">
+                <li>
+                    <img src="images/gallery-1.jpg" alt="" width="180" height="" class="img-1">
+                    <img src="images/g-hover.jpg" alt="" width="auto" height="405" class="img-2">
+
+                </li>
+                <li>
+                    <img src="images/gallery-1.jpg" alt="" width="180" class="img-1">
+                    <img src="images/g-hover.jpg" alt="" width="auto" class="img-2">
+
+                </li>
+
+                <li>
+                    <img src="images/gallery-1.jpg" alt="" width="180" class="img-1">
+                    <img src="images/g-hover.jpg" alt="" width="auto" class="img-2">
+
+                </li>
+
+                <li>
+                    <img src="images/gallery-1.jpg" alt="" width="180" class="img-1">
+                    <img src="images/g-hover.jpg" alt="" width="auto" class="img-2">
+
+                </li>
+
+                <li>
+                    <img src="images/gallery-1.jpg" alt="" width="180" class="img-1">
+                    <img src="images/g-hover.jpg" alt="" width="auto" class="img-2">
+
+                </li>
+
+
+
+
+
+
+            </ul>
+        </div> -->
+     <div class="row">
+                <div class="col-6 col-md-6 col-lg-4">
+                    <div class="gallery-item">
+                        <img src="images/gallery-1.webp" alt="ppc" title="Embassy Edge Devanahalli Bangalore" width="750" height="500" class="img-fluid">
+                    </div>
+                </div>
+                 <div class="col-6 col-md-6 col-lg-4">
+                    <div class="gallery-item">
+                        <img src="images/gallery-1.webp" alt="ppc" title="Embassy Edge Devanahalli Bangalore" width="750" height="500" class="img-fluid">
+                    </div>
+                </div>
+                 <div class="col-6 col-md-6 col-lg-4">
+                    <div class="gallery-item">
+                        <img src="images/gallery-1.webp" alt="ppc" title="Embassy Edge Devanahalli Bangalore" width="750" height="500" class="img-fluid">
+                    </div>
+                </div>
+                 <div class="col-6 col-md-6 col-lg-4">
+                    <div class="gallery-item">
+                        <img src="images/gallery-1.webp" alt="ppc" title="Embassy Edge Devanahalli Bangalore" width="750" height="500" class="img-fluid">
+                    </div>
+                </div>
+                 <div class="col-6 col-md-6 col-lg-4">
+                    <div class="gallery-item">
+                        <img src="images/gallery-1.webp" alt="ppc" title="Embassy Edge Devanahalli Bangalore" width="750" height="500" class="img-fluid">
+                    </div>
+                </div>
+                 <div class="col-6 col-md-6 col-lg-4">
+                    <div class="gallery-item">
+                        <img src="images/gallery-1.webp" alt="ppc" title="Embassy Edge Devanahalli Bangalore" width="750" height="500" class="img-fluid">
+                    </div>
+                </div>
+               
+              
+            </div>
+    </div>
+
+
+</section> 
+
+  
+
+    <section class="price-section  " id="price-list" style="margin-bottom:40px;">
+        <div class="container">
+            <div class="section-title text-center">
+                <h2 class="section-bot">Price List</h2>
+            </div>
+            <table class="table table-bordered">
+                <tbody>
+                    <tr>
+                        <th>Type</th>
+                        <th>Sizes</th>
+                        <th>Price</th>
+                        <th>Unlock Offers</th>
+                    </tr>
+                    <tr>
+                        <td>2 BHK + 2T</td>
+                        <td>1193–1242 Sq. Ft.* </td>
+                        <td>1.55 Cr* Onwards</td>
+                        <td><button href="#myModalMasterPlan" onclick="formTitleFunction(this)"
+                                class="modal-button btn">Enquire Now</button></td>
+                    </tr>
+                    <tr>
+                        <td>3 BHK + 2T</td>
+                        <td>1888–1930 Sq. Ft.* </td>
+                        <td>On Request</td>
+                        <td><button href="#myModalMasterPlan" onclick="formTitleFunction(this)"
+                                class="modal-button btn">Enquire Now</button></td>
+                    </tr>
+                    <tr>
+                        <td>3 BHK Luxe</td>
+                        <td>2185–2305 Sq. Ft.*</td>
+                        <td>On Request</td>
+                        <td><button href="#myModalMasterPlan" onclick="formTitleFunction(this)"
+                                class="modal-button btn">Enquire Now</button></td>
+                    </tr>
+
+                </tbody>
+            </table>
+            <div class="mobile-price">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="price-box">
+                        <div class="typology">2 BHK + 2T</div>
+                        <div class="price-details">
+                            <div class="price-major">Sizes</div>
+                            1193–1242 Sq. Ft.*  	
+                        </div>
+                        <div class="price-details">
+                            <div class="price-major">Price</div>
+                            1.55 Cr* Onwards
+                        </div>
+                        <div class="micro-btn"><button href="#myModalMasterPlan" onclick="formTitleFunction(this)" class="modal-button btn">Enquire Now</button></div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="price-box">
+                        <div class="typology">3 BHK + 2T</div>
+                        <div class="price-details">
+                            <div class="price-major">Sizes</div>
+                            1888–1930 Sq. Ft.* 
+                        </div>
+                        <div class="price-details">
+                            <div class="price-major">Price</div>
+                            On Request
+                        </div>
+                        <div class="micro-btn"><button href="#myModalMasterPlan" onclick="formTitleFunction(this)" class="modal-button btn">Enquire Now</button></div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="price-box">
+                        <div class="typology">3 BHK Luxe</div>
+                        <div class="price-details">
+                            <div class="price-major">Sizes</div>
+                            2185–2305 Sq. Ft.* 
+                        </div>
+                        <div class="price-details">
+                            <div class="price-major">Price</div>
+                            On Request
+                        </div>
+                        <div class="micro-btn"><button href="#myModalMasterPlan" onclick="formTitleFunction(this)" class="modal-button btn">Enquire Now</button></div>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section class="amenities-section same-gap" id="amenities">
+        <div class="container">
+            <div class="section-title text-center">
+                <h2 class="section-bot">Amenities</h2>
+            </div>
+            <div class="amenities-slider-mobile">
+                <div class="swiper-container amenities-swiper">
+                    <div class="row carousel owl-carousel">
+                        <div class="col-6 col-md-6 col-lg-2 swiper-slide">
+                            <div class="amenities-item">
+                                <div class="amenities-img">
+                                    <img src="images/ameni-icon-bg.png" alt="" class="img-fluid">
+                                    <img src="images/kids-play.png" alt="" class="amenities-icon img-fluid">
+                                </div>
+                                <p>Kids play area</p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-6 col-lg-2 swiper-slide">
+                            <div class="amenities-item">
+                                <div class="amenities-img">
+                                    <img src="images/ameni-icon-bg.png" alt="" class="img-fluid">
+                                    <img src="images/kids-play.png" alt="" class="amenities-icon img-fluid">
+                                </div>
+                                <p>Kids play area</p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-6 col-lg-2 swiper-slide">
+                            <div class="amenities-item">
+                                <div class="amenities-img">
+                                    <img src="images/ameni-icon-bg.png" alt="" class="img-fluid">
+                                    <img src="images/kids-play.png" alt="" class="amenities-icon img-fluid">
+                                </div>
+                                <p>Kids play area</p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-6 col-lg-2 swiper-slide">
+                            <div class="amenities-item">
+                                <div class="amenities-img">
+                                    <img src="images/ameni-icon-bg.png" alt="" class="img-fluid">
+                                    <img src="images/kids-play.png" alt="" class="amenities-icon img-fluid">
+                                </div>
+                                <p>Kids play area</p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-6 col-lg-2 swiper-slide">
+                            <div class="amenities-item">
+                                <div class="amenities-img">
+                                    <img src="images/ameni-icon-bg.png" alt="" class="img-fluid">
+                                    <img src="images/kids-play.png" alt="" class="amenities-icon img-fluid">
+                                </div>
+                                <p>Kids play area</p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-6 col-lg-2 swiper-slide">
+                            <div class="amenities-item">
+                                <div class="amenities-img">
+                                    <img src="images/ameni-icon-bg.png" alt="" class="img-fluid">
+                                    <img src="images/kids-play.png" alt="" class="amenities-icon img-fluid">
+                                </div>
+                                <p>Kids play area</p>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+
+        </div>
+
+    </section>
+    <section class="location-advantage-section white-text same-gap " id="location">
+        <div class="container">
+
+            <div class="location-advantage-div">
+                <div class="row">
+                    <div class="col-12 col-lg-6">
+                        <div class="location-advantage-img">
+                            <img src="./images/location-map.jpg" alt="ppc 
+        " width="1024" height="970" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <div class="location-advantage-text">
+                            <div class="row">
+                                <div class="section-title text-center">
+                                    <h2 style="text-align: left;">Location Advantage</h2>
+
+                                </div>
+
+                                <div class="col-6 col-md-6 col-lg-6 col-xl-6">
+                                    <div class="project-info-item">
+                                        <div class="project-info-inner-div">
+                                            <img src="images/loca-item-bg.png" class="img-fluid" alt="">
+
+                                            <div class="project-info-inner-div-text">
+                                                <div class="icon">
+                                                    <img src="images/icon-bg.png" alt="" class="iconbg">
+                                                    <img src="images/lo-icon.png" alt="" class="icn">
+                                                </div>
+                                                <div class="text">
+                                                    <p>North Bangalore</p>
+                                                    <h4>Location</h4>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-6 col-lg-6 col-xl-6">
+                                    <div class="project-info-item">
+                                        <div class="project-info-inner-div">
+                                            <img src="images/loca-item-bg.png" class="img-fluid" alt="">
+
+                                            <div class="project-info-inner-div-text">
+                                                <div class="icon">
+                                                    <img src="images/icon-bg.png" alt="" class="iconbg">
+                                                    <img src="images/lo-icon.png" alt="" class="icn">
+                                                </div>
+                                                <div class="text">
+                                                    <p>North Bangalore</p>
+                                                    <h4>Location</h4>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-6 col-lg-6 col-xl-6">
+                                    <div class="project-info-item">
+                                        <div class="project-info-inner-div">
+                                            <img src="images/loca-item-bg.png" class="img-fluid" alt="">
+
+                                            <div class="project-info-inner-div-text">
+                                                <div class="icon">
+                                                    <img src="images/icon-bg.png" alt="" class="iconbg">
+                                                    <img src="images/lo-icon.png" alt="" class="icn">
+                                                </div>
+                                                <div class="text">
+                                                    <p>North Bangalore</p>
+                                                    <h4>Location</h4>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-6 col-lg-6 col-xl-6">
+                                    <div class="project-info-item">
+                                        <div class="project-info-inner-div">
+                                            <img src="images/loca-item-bg.png" class="img-fluid" alt="">
+
+                                            <div class="project-info-inner-div-text">
+                                                <div class="icon">
+                                                    <img src="images/icon-bg.png" alt="" class="iconbg">
+                                                    <img src="images/lo-icon.png" alt="" class="icn">
+                                                </div>
+                                                <div class="text">
+                                                    <p>North Bangalore</p>
+                                                    <h4>Location</h4>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-6 col-lg-6 col-xl-6">
+                                    <div class="project-info-item">
+                                        <div class="project-info-inner-div">
+                                            <img src="images/loca-item-bg.png" class="img-fluid" alt="">
+
+                                            <div class="project-info-inner-div-text">
+                                                <div class="icon">
+                                                    <img src="images/icon-bg.png" alt="" class="iconbg">
+                                                    <img src="images/lo-icon.png" alt="" class="icn">
+                                                </div>
+                                                <div class="text">
+                                                    <p>North Bangalore</p>
+                                                    <h4>Location</h4>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-6 col-lg-6 col-xl-6">
+                                    <div class="project-info-item">
+                                        <div class="project-info-inner-div">
+                                            <img src="images/loca-item-bg.png" class="img-fluid" alt="">
+
+                                            <div class="project-info-inner-div-text">
+                                                <div class="icon">
+                                                    <img src="images/icon-bg.png" alt="" class="iconbg">
+                                                    <img src="images/lo-icon.png" alt="" class="icn">
+                                                </div>
+                                                <div class="text">
+                                                    <p>North Bangalore</p>
+                                                    <h4>Location</h4>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="floor-plan-section same-gap section-title-white " id="floor-plan">
+        <div class="container">
+            <div class="section-title text-center">
+                <h2 class="section-bot">Floor Plans</h2>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="floor-plan-item">
+                        <a href="#myModalMasterPlan">
+                            <img src="images/floor-plan.png" alt="ppc
+master plan" width="750" height="500" class="img-fluid">
+                            <!-- <button href="#myModalMasterPlan" onclick="formTitleFunction(this)" class="modal-button btn">Download Floor Plan</button> -->
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="floor-plan-item">
+                        <a href="#myModalMasterPlan">
+                            <img src="images/floor-plan.png" alt="ppc
+site layout" width="750" height="500" class="img-fluid">
+                            <!-- <button href="#myModalMasterPlan" onclick="formTitleFunction(this)" class="modal-button btn">Download Floor Plan</button> -->
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="floor-plan-item">
+                        <a href="#myModalMasterPlan">
+                            <img src="images/floor-plan.png" alt="ppc" width="750" height="500" class="img-fluid">
+                            <!-- <button href="#myModalMasterPlan" onclick="formTitleFunction(this)" class="modal-button btn">Download Floor Plan</button> -->
+                        </a>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="about-developer same-gap ">
+        <div class="container">
+            <div class="section-title text-center">
+                <h2 class="section-bot">About developer</h2>
+
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                    leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
+                    with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+                    publishing software like Aldus PageMaker including versions of Lorem Ipsum. </p>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="project-video-section">
+        <div class="container">
+
+            <img src="images/virtual-bg.jpg" alt="" class="img-fluid">
+            <div class="project-video-div">
+                <a href="#myModalMasterPlan" onclick="formTitleFunction(this)" class="modal-button"><img
+                        href="#myModalMasterPlan" class="modal-button"
+                        onclick="formTitleFunction(document.getElementById('project-video'));" src="images/play-btn.png"
+                        width="65" height="65" alt="ppc"> Virtual tour</a>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer class="footer ">
+        <div class="container">
+            <p>Disclaimer : This is not the official website of developer & property, it belongs to authorised channel
+                partner for information purpose only. All rights for logo & images are reserved to developer. Thank you
+                for visiting our website. This disclaimer ("Disclaimer") is applicable to this website and all
+                microsites and websites owned by us. By using or accessing this website you agree with the Disclaimer
+                without any qualification or limitation</p>
+            <ul>
+                <li><a target="_blank" href="../disclaimer.php">Disclaimer</a></li>
+                <li><a target="_blank" href="../privacy-policy.php">Privacy Policy</a></li>
+            </ul>
+        </div>
+
+    </footer>
+    <div class="side-enquire-now">
+        <button href="#myModalMasterPlan" onclick="formTitleFunction(this)" class="modal-button btn">Enquire
+            Now</button>
+    </div>
+
+
+
+
+
+    <div id="myModalMasterPlan" class="modal" style="display:none;">
+        <div class="modal-content">
+            <!-- <span class="close close_btn" onclick="closeFn()">&times;</span> -->
+            <span class="close close_btn" onclick="closeFn()">x</span>
+            <div class="modal-form">
+                <h3 id="form-title-name"></h3>
+                <form method="post" onsubmit="formTitleSubmits(event)">
+                    <div class="input-group">
+                        <input type="text" name="name" id="inputName" class="form-control" placeholder="Name"
+                            required="" pattern="[a-zA-Z\s\-]+" title="Only letters, spaces, and hyphens are allowed.">
+                    </div>
+                    <div class="input-group">
+                        <input type="email" name="email" id="inputEmail" class="form-control" placeholder="Email"
+                            required="">
+                    </div>
+                    <div class="input-group">
+                        <!-- <span class="invalid_phone">Please enter valid Phone Number.</span> -->
+                        <input class="form-control phone" name="phone" type="tel" value="" required>
+                    </div>
+                    <input type="hidden" name="countryCode" id="country" class="country" value="" required>
+                    <input type="hidden" name="mobile" id="phonenumber" class="mobile" value="" required>
+                    <div class="input-error"> </div>
+                    <div class="input-group">
+                        <input type="text" name="message" id="inputMessage" class="form-control" placeholder="Message"
+                            required="">
+                    </div>
+                    <input type="hidden" name="urlName" id="projectNameFromUrlSecond" value="" />
+                    <input type="hidden" name="titleValue" id="formTitleSecond" value="" />
+                    <input type="hidden" name="source" class="source" value="Seo" />
+                    <input type="text" name="formflag" class="formflag" value="" />
+                    <button name="submit" class="btn submit-btn" type="submit">Submit</button>
+                    <div role="status" id="loader">
+                        <p class="btn submit-btn">Submitting...</p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- form modal end -->
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

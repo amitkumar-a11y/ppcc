@@ -1,0 +1,415 @@
+
+@media (max-width:1199px){
+header.page-header nav.menu ul li {
+    margin: 0 0 0 25px;
+}
+}
+
+
+@media (max-width:991px){
+    .amenities-section img.amenities-icon {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.amenities-item {
+    text-align: center;
+}
+header.page-header nav.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    display: inline-block;
+    position: relative;
+    width: 100%;
+  }
+header.page-header nav.menu{
+  position: fixed;
+  background: linear-gradient(55deg, rgba(155, 154, 120, 1) 17%, rgba(255, 232, 196, 1) 100%);
+    top: 65px;
+    left: 0;
+    width: 100%;
+    -webkit-transform: scaleY(0);
+    -ms-transform: scaleY(0);
+    transform: scaleY(0);
+    max-height: 0;
+    -webkit-transition: max-height 0.3s, -webkit-transform 0.3s;
+    transition: max-height 0.3s, -webkit-transform 0.3s;
+    -o-transition: max-height 0.3s, transform 0.3s;
+    transition: max-height 0.3s, transform 0.3s;
+    transition: max-height 0.3s, transform 0.3s, -webkit-transform 0.3s;
+    -webkit-transform-origin: top;
+    -ms-transform-origin: top;
+    transform-origin: top;
+    overflow: auto;
+}
+
+header.page-header nav.menu.open{
+        overflow: auto;
+    transform: scaleY(1);
+    max-height: 100vh;
+    margin-top:8px;
+}
+
+header.page-header nav.menu ul li{
+    -webkit-animation: fadeInRight 0.5s ease forwards;
+    animation: fadeInRight 0.5s ease forwards;
+    animation-delay: 0s;
+    animation-delay: 0s;
+    animation-delay: 0s;
+    animation-delay: 0s;
+    -webkit-animation-delay: 0.35s;
+    animation-delay: 0.35s;
+    opacity: 1;
+          border-bottom: 3px dotted #fff;
+    margin: 0;
+}
+
+
+  .button_container {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    height: 29px;
+    width: 30px;
+    cursor: pointer;
+    z-index: 100;
+    transition: opacity 0.25s ease;
+    transform: translateY(-50%);
+  }
+  .button_container span {
+    background: #fff;
+    border: 0;
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.35s ease;
+    cursor: pointer;
+  }
+   .button_container span:nth-of-type(2) {
+    top: 11px;
+  }
+  .button_container span:nth-of-type(3) {
+    top: 22px;
+  }
+    .button_container.active .top {
+    transform: translateY(11px) translateX(0) rotate(45deg);
+    background: #fff;
+  }
+    .button_container.active .middle {
+    opacity: 0;
+    background: #fff;
+  }
+    .button_container.active .bottom {
+    transform: translateY(-11px) translateX(0) rotate(-45deg);
+    background: #fff;
+  }
+  header.page-header nav.menu ul li a {
+    font-size: 16px;
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: "Inter", sans-serif;
+    font-weight: 200;
+    letter-spacing: 1.5px;
+    padding: 22px 0;
+    display: block;
+    text-align: center;
+}
+.banner_content {
+        top: 158px;
+    }
+.bnr_left_content .bnr_form {
+    display: none;
+}
+.bnr_right_content {
+    color: #fff;
+    text-align: left;
+    margin-left: 0;
+    margin-top: 0;
+}
+.bnr_right_content h1 {
+    font-size: 45px;
+}
+.same-gap {
+    padding: 25px 0;
+}
+.height_inner {
+    top: 28px;
+}
+.height_inner .section-title {
+    margin-bottom: 28px;
+}
+.hight-point {
+    margin-bottom: 32px;
+    padding-left: 48px;
+}
+.hight-point:before {
+    left: 12px;
+    top: -7px;
+}
+.section-title h2 {
+    font-size: 30px;
+}
+}
+
+
+@media (max-width:767px) {
+    .bnr_right_content h1 {
+        font-size: 40px;
+   
+    }
+    .highlights-div img {
+    height: 71vh;
+}
+    .hight-point:before {
+        left: 94px;
+        top: -7px;
+    }
+    .section-title h2 {
+    font-size: 25px;
+}
+.project-video-div a.modal-button {
+    width: 170px;
+    font-size: 18px;
+    gap: 13px;
+    height: 50px;
+}
+.project-video-div {
+    top: 19px;
+    left: 29px;
+}
+img.modal-button {
+    width: 45px !important;
+    height: 44px !important;
+}
+}
+
+@media (max-width:575px) {
+    .bnr_right_content h1 {
+        font-size: 30px;
+    }
+    .bnr_right_content .starting-price,
+    .bnr_right_content .contact-number {
+    font-size: 15px;
+}
+.logo {
+    width: 120px;
+}
+    header.page-header nav.menu ul li a {
+        font-size: 14px;
+                color: #fff;
+}
+img.iconbg {
+    width: 60px;
+    height: auto;
+}
+.project-info-inner-div-text .icon img.icn {
+    position: absolute;
+    left: 20px;
+    top: 16px;
+    width: 21px;
+}
+.project-info-inner-div-text .text h4 {
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    font-size: 13px;
+}
+    .hight-point:before {
+display: none;
+    }
+    .hight-point {
+        margin-bottom: 27px;
+        padding-left: 0;
+        font-size: 14px;
+    }
+    .section-title h2 {
+    font-size: 20px;
+}
+
+.mobile-price{
+    display: block;
+}
+table.table{
+  display: none;
+}
+
+.price-section .price-box {
+    padding: 20px 15px;
+    border-radius: 4px;
+    border-radius: 22px;
+    background-color: #c9be9b;
+    background: linear-gradient(
+334deg, rgba(155, 154, 120, 1) 17%, rgba(255, 232, 196, 1) 100%);
+    transition: 0.8s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+    .price-section .price-box {
+        margin-bottom: 30px;
+    }
+.price-section .price-box:before {
+    content: "";
+    position: absolute;
+    width: 132px;
+    height: 161px;
+    background: #9b9a78;
+    background: linear-gradient(
+52deg, rgba(155, 154, 120, 1) 17%, rgba(255, 232, 196, 1) 100%);
+    top: -108px;
+    left: -40px;
+    transform: rotate(56deg);
+    transition: all .8s ease;
+}
+.price-section .price-box:after {
+    content: "";
+    position: absolute;
+    width: 132px;
+    height: 161px;
+    background: #575643;
+    background: linear-gradient(
+24deg, rgba(155, 154, 120, 1) 17%, rgba(255, 232, 196, 1) 100%);
+    bottom: -108px;
+    right: -40px;
+    transform: rotate(56deg);
+    transition: all .8s ease;
+}
+.price-section .typology {
+    /* border: 2px solid #19407d; */
+    width: fit-content;
+    margin: auto;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 600;
+    background: #9b9a78;
+    color: #fff;
+}
+.price-section .price-details {
+    text-align: center;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: 600;
+    border-bottom: 1px dotted #000;
+    border-bottom: 2px dotted var(--black);
+    line-height: 24px;
+}
+.price-section .micro-btn {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.price-major {
+    font-size: 16px;
+}
+.price-section .price-details {
+    text-align: center;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: 600;
+    border-bottom: 1px dotted #000;
+    border-bottom: 2px dotted ;
+}
+.about-developer p {
+    font-size: 14px;
+}
+footer.footer p {
+    font-size: 12px;
+
+}
+footer ul li a {
+    font-size: 13px;
+}
+.price-section button.modal-button.btn {
+    font-size: 13px;
+ 
+}
+.amenities-section .amenities-item p {
+    font-size: 13px;
+}
+.project-video-div a.modal-button {
+width: 126px;
+        font-size: 13px;
+        gap: 7px;
+        height: 37px;
+}
+img.modal-button {
+    width: 40px !important;
+    height: 39px !important;
+}
+.project-video-div {
+    position: absolute;
+    top: 14px;
+    left: 24px;
+}
+.modal-form h3 {
+    font-size: 16px;
+}
+}
+
+@media (max-width:410px) {
+.bnr_right_content .starting-price,
+.bnr_right_content .contact-number {
+
+    font-size: 12px;
+}
+.bnr_right_content h1 {
+        font-size: 25px;
+    }
+    .project-info-inner-div-text {
+    top: 3px;
+    left: 0px;
+}
+.project-info-inner-div-text .text p {
+    font-size: 13px;
+}
+    .hight-point {
+        margin-bottom: 9px;
+        padding-left:0px;
+        font-size: 13px;
+        line-height: 20px;
+    }
+
+    .section-title h2 {
+    font-size: 20px;
+}
+    .highlights-div img {
+        height: 50vh;
+    }
+        .bnr_left_content .bnr_form {
+        display: block;
+    }
+    .banner_content {
+        top: 84px;
+    }
+    .bnr_left_content .enquire-div .form-control, .modal-form .form-control {
+    margin-bottom: 12px;
+     font-size: 12px;
+}
+.bnr_left_content .bnr_form{
+padding: 22px;
+        margin-top: 3px;
+}
+.bnr_left_content .bnr_form .form_title {
+    font-size: 14px;
+    margin: 7px 0px 17px;
+}
+.bnr_right_content {
+        margin-left: 20px;
+    }
+        header.page-header nav.menu {
+        top: 50px;
+        }
+        .price-section .price-details {
+
+
+    font-size: 13px;
+ 
+}
+header.page-header nav.menu.open {
+        margin-top: 4px;
+    }
+}
